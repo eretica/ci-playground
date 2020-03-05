@@ -49,8 +49,7 @@
   "lint-staged": {
     "*.{ts,tsx}": [
       "prettier-eslint --write",
-      "eslint",
-      "git add"
+      "eslint"
     ]
   },
   "husky": {
