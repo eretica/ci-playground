@@ -1,5 +1,5 @@
 name: CI dayo
-on: pull_request
+on: [pull_request, push]
 
 jobs:
   unit-test:
