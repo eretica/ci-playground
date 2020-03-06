@@ -1,0 +1,14 @@
+name: AutoProjectAssinge
+
+on:
+  pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Assign to Project
+      uses: srggrs/assign-one-project-github-action@1.1.0
+      with:
+        if: github.event.action == 'opened'
+        project: https://github.com/eretica/ci-playground/projects/1
