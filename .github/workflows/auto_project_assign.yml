@@ -15,6 +15,6 @@ jobs:
         uses: AlexisMateo/issue-to-project-action@0.0.1
         with:
           # admin github token
-          github-token: ${{ secret.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           # the path to the project
           project_path: https://github.com/eretica/ci-playground/projects/1
