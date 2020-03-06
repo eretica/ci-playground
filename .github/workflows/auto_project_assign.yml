@@ -5,16 +5,14 @@ on:
     types: [opened]
   issues:
     types: [opened]
-
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: assing issue to project
-        uses: AlexisMateo/issue-to-project-action@0.0.1
-        with:
-          # admin github token
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          # the path to the project
-          project_path: https://github.com/eretica/ci-playground/projects/1
+    - name: Run assignment to project
+      uses: srggrs/assign-one-project-github-action@1.1.0
+      with:
+        project: 'https://github.com/eretica/ci-playground/projects/1'
