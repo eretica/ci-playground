@@ -1,7 +1,7 @@
 ![CI dayo](https://github.com/eretica/ci-playground/workflows/CI%20dayo/badge.svg)
 
 ![Hello, World!](https://github.com/eretica/ci-playground/workflows/Hello,%20World!/badge.svg)
-
+a
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
