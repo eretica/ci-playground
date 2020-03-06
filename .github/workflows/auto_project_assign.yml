@@ -12,6 +12,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: Echo
+      run: echo "${{ toJson(github) }}"
     - name: Run assignment to project
       uses: srggrs/assign-one-project-github-action@1.1.0
       with:
