@@ -7,3 +7,7 @@ test("check for calc of double", () => {
 test("check for calc of divide", () => {
   expect(calc.divide(2)).toBeLessThanOrEqual(1);
 });
+
+test("check for calc of plusOne", () => {
+  expect(calc.plusOne(10)).toBeLessThanOrEqual(11);
+});
