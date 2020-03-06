@@ -9,3 +9,7 @@ export const divide = (num: number) => {
 export const plusOne = (num: number) => {
   return num + 1;
 };
+
+export const minus = (num: number) => {
+  return num - 1;
+};

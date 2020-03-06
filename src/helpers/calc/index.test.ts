@@ -11,3 +11,7 @@ test("check for calc of divide", () => {
 test("check for calc of plusOne", () => {
   expect(calc.plusOne(10)).toBeLessThanOrEqual(11);
 });
+
+test("check for calc of minus", () => {
+  expect(calc.minus(1)).toBeLessThanOrEqual(0);
+});
